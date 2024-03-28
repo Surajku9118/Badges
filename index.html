@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Badge Containers</title>
+<style>
+  body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  h1 {
+    margin-top: 20px;
+    color: #333;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .badge-container {
+    margin: 10px;
+    width: 200px; /* Adjust width for larger size */
+    height: 350px; /* Adjust height for larger size */
+    border: 2px solid transparent; /* Add transparent border */
+    transition: transform 0.3s ease, opacity 0.3s ease, border-color 0.3s ease; /* Add transition for border color */
+  }
+
+  .badge-container:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    opacity: 0.8; /* Reduce opacity on hover */
+    border-color: #333; /* Change border color on hover */
+  }
+
+  @media screen and (max-width: 768px) {
+    .badge-container {
+      width: 45%; /* Adjust width for smaller screens */
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .badge-container {
+      width: 90%; /* Adjust width for even smaller screens */
+    }
+  }
+  .instructions {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<h1>Badges</h1>
+
+<div class="container">
+  <div class="badge-container" data-iframe-width="350" data-iframe-height="470" data-share-badge-id="7433a314-32e5-4a84-a243-f96ae889c04a" data-share-badge-host="https://www.credly.com"></div>
+  <div class="badge-container" data-iframe-width="350" data-iframe-height="470" data-share-badge-id="934097e7-b6aa-400b-a2b4-9fd2148ba661" data-share-badge-host="https://www.credly.com"></div>
+  <div class="badge-container" data-iframe-width="350" data-iframe-height="470" data-share-badge-id="ab6cc8e7-5b96-43ee-b1bc-343501c6b334" data-share-badge-host="https://www.credly.com"></div>
+  <div class="badge-container" data-iframe-width="350" data-iframe-height="470" data-share-badge-id="070497cc-a201-455f-9411-826601cdf749" data-share-badge-host="https://www.credly.com"></div>
+  <div class="badge-container" data-iframe-width="350" data-iframe-height="470" data-share-badge-id="4db9880f-4c75-470c-9e1f-3c6047c7e93d" data-share-badge-host="https://www.credly.com"></div>
+
+  
+</div>
+
+<div class="instructions">
+  Click on an image to enlarge it, you can also use the <b>tab key</b> to navigate to the next image.
+</div>
+
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+</body>
+</html>
